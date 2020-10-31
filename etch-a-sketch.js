@@ -4,7 +4,7 @@ for (let i = 0; i < 256; i++) {
   let div = document.createElement("div");
   container.appendChild(div);
   div.style.cssText =
-    "height: 25px; background-color: white; border: 1px solid black; border-radius: 15px;";
+    "height: 25px; background-color: white; border: 1px solid black;";
   div.addEventListener("mouseover", () => {
     let randomColor = Math.floor(Math.random() * 16777215).toString(16);
     div.style.backgroundColor = `#${randomColor}`;
@@ -24,7 +24,7 @@ function clearGrid() {
     for (let i = 0; i < numSquares; i++) {
       let div = document.createElement("div");
       container.appendChild(div);
-      div.style.cssText = `height: ${height}px; background-color: white; border: 1px solid black; border-radius: 15px;`;
+      div.style.cssText = `height: ${height}px; background-color: white; border: 1px solid black;`;
       container.style["grid-template-columns"] = `repeat(${size}, 1fr)`;
       container.style["width"] = `400px`;
       div.addEventListener("mouseover", () => {
